@@ -3,28 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title> TikTok Downloader by Berkay AY</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+  />
     <link rel="icon" href="img/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="_root.scss"></script>
     <script src="_variables.scss"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <h2 style="font-size:300% ; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="text-primary">TikTok Downloader <v1 class="1"></v1></h2>
-        </div>
-      </nav>
-
+    <link rel="stylesheet" href="custom.css" />
 </head>
 <body>
+  <div class="container-fluid px-0">
+    <!-- Content here -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://berkays0733.github.io/tiktok-saver">TikTok Saver</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://berkays0733.github.io/tiktok-saver">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/berkays0733/tiktok-saver">Source</a>
+            </li>
+          </ul>
+          </form>
+          <div class="form-check form-switch ms-auto mt-3 me-3">
+            <label class="form-check-label ms-3" for="lightSwitch">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-brightness-high"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+            </label>
+            <input class="form-check-input" type="checkbox" id="lightSwitch" />
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav> <br> <br> <br>
   <div class="text-center">
     <img width="100" height="100" src="img/tiktok.png" class="rounded" alt="...">
     <br>
@@ -32,42 +79,33 @@
 <div class="container"> <br>
     <div class="row">
 <br>
-        <div class="input-group mb-3">
+      <div class="input-group mb-3">
             <input type="text" class="form-control form-control-lg" id="url" name="url" placeholder="Paste video URL">
             <button type="button" class="btn btn-outline-primary btn-lg" onclick="download()">Download</button>
-          </div> <br>
-    </div><br>
-    <div class="row row-cols-1 row-cols-md-3 g-3">
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h3 class="card-title"> Find Videos <img src="img/search.svg" height="18"></h3>
-        <p class="card-text">Copy the TikTok video URL by clicking Share and choosing Copy Link</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h3 class="card-title"> Paste Video <img src="img/copy.svg" height="18"></h3>
-        <p class="card-text">Paste the TikTok video URL in the box above and hit the Download button.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <div class="card-body">
-        <h3 class="card-title">Download Video <img src="img/download.svg" height="18"></h3>
-        <p class="card-text">Click Download Without Watermark to download video Mp4 without watermark</p>
-      </div>
-    </div>
-  </div>
-<br>
-</div> <br> <br>
+      </div> 
+</div>
         <div style="font-size:medium ;" class="alert alert-primary"  role="alert">
             Coded by <a href="https://github.com/berkays0733" class="class="text-primary>Berkay AY</a> |
             The project is presented as Open Source. <a href="https://github.com/berkays0733/tiktok-saver" class="class="text-primary>GitHub</a>
         </div>
 </div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+
+<!-- Light Switch -->
+<script src="switch.js"></script>
 </body>
+<footer class="text-center text-lg-start bg-white text-muted">
+
+  </section>
+  <!-- Copyright -->
+  <div class="text-center p-4 fixed-bottom" style="background-color: rgba(0, 0, 0, 0.025);">
+    <i style="font-size:medium ;" class="fa-solid fa-code "></i >  2022 Copyright:
+    <a style="font-size:medium ;" class="text-reset fw-bold" href="https://berkays0733.github.io/tiktok-saver/">Source Code</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </html>
